@@ -1,0 +1,30 @@
+{
+	"id": "starlight-journals",
+	"title": "Starlight Journals",
+	"description": "Foundry implementation for Starlight Journals.",
+	"version": "0.0.1",
+
+	"esmodules": ["starlight-journals.js"],
+	"styles": ["style.css"],
+
+	"compatibility": {
+		"minimum": "13.351",
+		"verified": "13.351",
+		"maximum": "13.9999"
+	},
+
+	"authors": [
+		{ "id": "Ryos", "name": "Ryos", "discord": "zuris", "url": "" }
+	],
+
+	"languages": [
+		{ "lang": "en", "name": "English", "path": "lang/en.json" }
+	],
+
+	"flags": {
+		"hotReload": {
+			"extensions": ["hbs", "json"],
+			"paths": ["templates/", "lang/"]
+		}
+	}
+}

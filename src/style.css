@@ -1,0 +1,8 @@
+/**
+ * only required in dev
+ * in prod, foundry loads style.css, as compiled by vite/rollup,
+ * mostly from the `import "styles/style.css"` line at the top of starlight-journals.ts
+ *
+ * in dev, foundry loads style.css, this file, which is a no-op
+ * in dev, starlight-journals.ts imports styles/style.css directly
+ */

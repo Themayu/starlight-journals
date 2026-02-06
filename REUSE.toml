@@ -1,0 +1,28 @@
+version = 1
+
+[[annotations]]
+path = [
+	".vscode/**",
+	"public/lang/**",
+	"public/system.json",
+	"src/**",
+	"LICENSE",
+	"LICENSE-APACHE",
+	"LICENSE-MIT",
+	"package-lock.json",
+	"package.json",
+	"README.md",
+	"tsconfig.json",
+	"vite.config.ts",
+	".gitattributes",
+	".gitignore"
+]
+precedence = "override"
+SPDX-FileCopyrightText = "Ryos"
+SPDX-License-Identifier = "MIT OR Apache-2.0"
+
+[[annotations]]
+path = "public/fonts/Signika/**"
+precedence = "override"
+SPDX-FileCopyrightText = "The Signika Project Authors"
+SPDX-License-Identifier = "OFL-1.1"
