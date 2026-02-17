@@ -1,5 +1,8 @@
+import init from "@hooks/init";
 import "./styles/style.css";
 
 Hooks.on("ready", function() {
-	ui.notifications.info("[starlight-journals] Hello world!", { progress: true });
+	ui.notifications?.info("[starlight-journals] Hello world!");
 })
+
+Hooks.on("init", init);

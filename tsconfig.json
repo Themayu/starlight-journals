@@ -1,9 +1,9 @@
 {
 	"compilerOptions": {
 		"target": "ESNext",
-		"useDefineForClassFields": false,
+		"useDefineForClassFields": true,
 		"module": "ESNext",
-		"lib": ["ES2022", "DOM", "DOM.Iterable"],
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
 		"types": ["vite/client", "fvtt-types"],
 		"skipLibCheck": false,
 
@@ -21,7 +21,11 @@
 		"noUnusedParameters": false,
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedIndexedAccess": true,
-		"exactOptionalPropertyTypes": true,
+
+		/* Path mapping (typescript + vite) */
+		"paths": {
+			"@*": ["./src/module/*", "./src/*"],
+		}
 	},
 
 	"include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js"]

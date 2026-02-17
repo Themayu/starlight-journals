@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import tsConfigPaths from "vite-tsconfig-paths";
 import path from "node:path";
 
 const config = defineConfig({
@@ -17,6 +18,10 @@ const config = defineConfig({
 			},
 		},
 	},
+
+	plugins: [
+		tsConfigPaths({ loose: true }),
+	],
 
 	optimizeDeps: {
 		rolldownOptions: {
@@ -41,6 +46,7 @@ const config = defineConfig({
 	build: {
 		outDir: path.resolve(__dirname, "dist"),
 		emptyOutDir: false,
+		license: true,
 		sourcemap: true,
 
 		lib: {
@@ -49,6 +55,11 @@ const config = defineConfig({
 			formats: ["es"],
 			fileName: "starlight-journals",
 			cssFileName: "style",
+		},
+
+		watch: {
+			buildDelay: 1000,
+			include: ["public/system.json"].map(pathSpec => path.resolve(__dirname, pathSpec)),
 		},
 	},
 });

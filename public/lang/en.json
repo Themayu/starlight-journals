@@ -1,3 +1,509 @@
 {
-	
+	"TYPES": {
+		"Actor": {
+			"playerCharacter": "Player Character"
+		}
+	},
+
+	"STARLIGHT_JOURNALS.Advancement": {
+		"Levels": {
+			"Trainee": "Trainee",
+			"Amateur": "Amateur",
+			"Professional": "Professional",
+			"Ace": "Ace",
+			"Elite": "Elite",
+			"Epitome": "Epitome"
+		},
+
+		"Level": "Level",
+		"SkillLevelCap": "Skill level cap",
+		"TalentLevelCap": "Talent tier cap",
+		"StatisticBoostCap": "Statistic increase cap",
+		"AttributeBoostCap": "Attribute increase cap",
+		"AssetBaseCap": "Base Assets cap",
+
+		"ExperiencePoints": "XP",
+		"GainedExperience": "Gained",
+		"SpentExperience": "Spent",
+		"UnusedExperience": "Unused"
+	},
+
+	"STARLIGHT_JOURNALS.Statistics": {
+		"Statistics": "Statistics",
+		"Level": "Level",
+
+		"Build.Label": "Build",
+		"Build.Abbr": "BL",
+		"Build.Level": "Build level",
+		"Build.Summary": "Strength, endurance, and durability.",
+
+		"Coordination.Label": "Coordination",
+		"Coordination.Abbr": "CL",
+		"Coordination.Level": "Coordination Level",
+		"Coordination.Summary": "Dexterity, coordination, and perception.",
+
+		"Wits.Label": "Wits",
+		"Wits.Abbr": "WL",
+		"Wits.Level": "Wits level",
+		"Wits.Summary": "Willpower, quick thinking, and ability to act under pressure.",
+
+		"Acuity.Label": "Acuity",
+		"Acuity.Abbr": "AL",
+		"Acuity.Level": "Acuity level",
+		"Acuity.Summary": "Curiosity, ability to learn, and overall knowledge.",
+
+		"Empathy.Label": "Empathy",
+		"Empathy.Abbr": "EL",
+		"Empathy.Level": "Empathy level",
+		"Empathy.Summary": "Ability to understand and relate to another person, and ability to wield empathetic psychic powers.",
+
+		"Potency.Label": "Potency",
+		"Potency.Abbr": "PL",
+		"Potency.Level": "Potency level",
+		"Potency.Summary": "General strength of psychic powers, and overall strength of personality.",
+
+		"Luck.Label": "Luck",
+		"Luck.Abbr": "LL",
+		"Luck.Level": "Luck level",
+		"Luck.Spent": "Spent Luck levels",
+		"Luck.Summary": "How much the universe favours the character. Used for re-rolls, surviving death, and other lucky breaks. Luck caps out at 50."
+	},
+
+	"STARLIGHT_JOURNALS.Attributes": {
+		"Assets.Label": "Assets",
+		"Assets.Remaining": "Remaining Assets",
+		"Assets.GeneralDescription": "An abstract measurement of a character's finances. Allocated to equipment maintenance, and spent on augments. Player characters start with 11 Assets.",
+		"Assets.PlayerDecription": "An abstract measurement of your finances. Allocated to equipment maintenance, and spent on augments. Player characters start with 11 Assets.",
+
+		"Capacity.Label": "Carry Capacity",
+		"Capacity.Remaining": "Remaining Carry Capacity",
+		"Capacity.GeneralDescription": "How much mass a character can carry without being over-burdened.",
+		"Capacity.PlayerDescription": "How much mass you can carry without being over-burdened.",
+
+		"Charges.Label": "Charges",
+		"Charges.Remaining": "Remaining Charges",
+		"Charges.GeneralDescription": "The amount of charges a character has to spend on psychic power use.",
+		"Charges.PlayerDescription": "The amount of charges you have to spend on psychic power use.",
+
+		"Charisma.Label": "Charisma",
+		"Charisma.GeneralDescription": "STARLIGHT_JOURNALS.Attributes.Charisma.GeneralDescription",
+		"Charisma.PlayerDescription": "STARLIGHT_JOURNALS.Attributes.Charisma.PlayerDescription",
+
+		"Health.Label": "Health",
+		"Health.Current": "Current Health",
+		"Health.GeneralDescription": "How much physical damage a character can take before they start receiving injuries.",
+		"Health.PlayerDescription": "How much physical damage you can take before you start receiving injuries.",
+
+		"Influence.Label": "Influence",
+		"Influence.Remaining": "Remaining Influence",
+		"Influence.GeneralDescription": "The level of fame and clout a character has. A character's reputation can preceed them, and cannot go away unless they appear dead or retired.",
+		"Influence.PlayerDescription": "Your level of fame and clout. Your reputation can preceed you, and cannot go away unless you appear dead or retired.",
+
+		"Ingenuity.Label": "Ingenuity",
+		"Ingenuity.GeneralDescription": "STARLIGHT_JOURNALS.Attributes.Ingenuity.GeneralDescription",
+		"Ingenuity.PlayerDescription": "STARLIGHT_JOURNALS.Attributes.Ingenuity.PlayerDescription",
+
+		"Intensity.Label": "Intensity",
+		"Intensity.GeneralDescription": "STARLIGHT_JOURNALS.Attributes.Intensity.GeneralDescription",
+		"Intensity.PlayerDescription": "STARLIGHT_JOURNALS.Attributes.Intensity.PlayerDescription",
+
+		"Nerve.Label": "Nerve",
+		"Nerve.Current": "Current Nerve",
+		"Nerve.GeneralDescription": "How much mental strain a character can suffer before they start receiving mental injuries.",
+		"Nerve.PlayerDescription": "How much mental strain you can suffer before you start receiving mental injuries.",
+
+		"Resilience.Label": "Resilience",
+		"Resilience.GeneralDescription": "STARLIGHT_JOURNALS.Attributes.Resilience.GeneralDescription",
+		"Resilience.PlayerDescription": "STARLIGHT_JOURNALS.Attributes.Resilience.PlayerDescription",
+
+		"Resolve.Label": "Resolve",
+		"Resolve.GeneralDescription": "The amount of nerve breaks a character can take before they fall apart.",
+		"Resolve.PlayerDescription": "The amount of nerve breaks you can take before you fall apart.",
+
+		"Speed.Label": "Speed",
+		"Speed.GeneralDescription": "STARLIGHT_JOURNALS.Attributes.Speed.GeneralDescription",
+		"Speed.PlayerDescription": "STARLIGHT_JOURNALS.Attributes.Speed.PlayerDescription",
+
+		"Stamina.Label": "Stamina",
+		"Stamina.Current": "Current Stamina",
+		"Stamina.GeneralDescription": "How much a character can physically exert themselves before suffering injuries from over-exertion.",
+		"Stamina.PlayerDescription": "How much you can physically exert yourself before suffering injuries from over-exertion.",
+
+		"Strength.Label": "Strength",
+		"Strength.GeneralDescription": "STARLIGHT_JOURNALS.Attributes.Strength.GeneralDescription",
+		"Strength.PlayerDescription": "STARLIGHT_JOURNALS.Attributes.Strength.PlayerDescription"
+	},
+
+	"STARLIGHT_JOURNALS.Focuses": {
+		"Biology": "Biology",
+		"Dexterity": "Dexterity",
+		"Exploration": "Exploration",
+		"General": "General",
+		"Mechanical": "Mechanical",
+		"Physical": "Physical",
+		"Physics": "Physics",
+		"Psychic": "Psychic",
+		"Social": "Social",
+		"Willpower": "Willpower"
+	},
+
+	"STARLIGHT_JOURNALS.Skills": {
+		"Acrobatics": {
+			"Label": "Acrobatics",
+			"Summary": "Quick and flexible movement, dodging attacks, performing contortionist feats, and avoiding physical obstacles with grace.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Acrobatics.Description",
+			"AltStatistics.Build": "<strong>Build</strong> can be used in situations like climbing or vaulting where upper body strength can be leveraged."
+		},
+
+		"AEFab": {
+			"Label": "Advanced Energy Fabrication",
+			"Summary": "To produce, use, and deconstruct high technology devices, primarily relying on advanced physics concepts like n-space. Aids in identification of such devices.",
+			"Description": "STARLIGHT_JOURNALS.Skills.AEFab.Description",
+			"AltStatistics.Wits": "<strong>Wits</strong> can be used when performing salvage and repair."
+		},
+
+		"AnimalHandling": {
+			"Label": "Animal Handling",
+			"Summary": "To control, tame, and pacify animals. Also covers the command of bio-drone devices as well as normal animals, as well as control of a tamed animal mount.",
+			"Description": "STARLIGHT_JOURNALS.Skills.AnimalHandling.Description",
+			"AltStatistics.Acuity": "<strong>Acuity</strong> can be used when providing care to a creature or attempting to pacify a well known animal, but takes a -20 when attempting to interact.",
+			"AltStatistics.Potency": "<strong>Potency</strong> can be used to intimidate an animal, though this receives a modifier based on your size versus the animal’s size."
+		},
+
+		"Antiquarian": {
+			"Label": "Antiquarian",
+			"Summary": "Historical facts, archaeological skill, and skill with languages. Also covers appraising and understanding ancient artifacts.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Antiquarian.Description",
+			"AltStatistics.Empathy": "<strong>Empathy</strong> can be used instead of <strong>Acuity</strong> to understand cultural artifacts and history."
+		},
+
+		"Athletics": {
+			"Label": "Athletics",
+			"Summary": "To endure long, strenuous activities like swimming, climbing, long runs, and the use of bow and crossbow style weapons. Can be used when using thrown weapons of any type.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Athletics.Description",
+			"AltStatistics.Coordination": "<strong>Coordination</strong> can be used instead of <strong>Build</strong> when making quick sprints or quickly swimming."
+		},
+
+		"BioFab": {
+			"Label": "Bio-fabrication",
+			"Summary": "To produce, use, and deconstruct bio-tech devices. This includes bio-drones, genetically modified entities, and medical drugs.",
+			"Description": "STARLIGHT_JOURNALS.Skills.BioFab.Description",
+			"AltStatistics.Wits": "<strong>Wits</strong> can be used when performing repairs or salvage."
+		},
+
+		"Chemistry": {
+			"Label": "Chemistry",
+			"Summary": "To identify and use chemicals. Can be used for performing forensics and salvaging tasks.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Chemistry.Description",
+			"AltStatistics.Wits": "<strong>Wits</strong> can be used in the place of <strong>Acuity</strong> when trying to do forensics quickly, but you take a -30 for the substitution."
+		},
+
+		"Composure": {
+			"Label": "Composure",
+			"Summary": "To resist social pressure and remain invisible in a crowd. Prevent others from reading your emotions and thoughts, even when you’re not trying to deceive.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Composure.Description",
+			"AltStatistics.Potency": "<strong>Potency</strong> can be used where you can justify cowing the other party out of their point instead of politely ignoring it."
+		},
+
+		"Control": {
+			"Label": "Control",
+			"Summary": "To control psychic energy and siphon energy when needed. Can be used to exert your will over void wraiths and other n-space formed entities.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Control.Description",
+			"AltStatistics.Empathy": "<strong>Empathy</strong> can be used if you negotiate with, rather than overpower, a void wraith or other n-space entity like an Echo."
+		},
+
+		"Cooking": {
+			"Label": "Cooking",
+			"Summary": "To turn raw food into delicious and appetizing meals. This includes many different human and alien techniques in the conversion.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Cooking.Description",
+			"AltStatistics.Acuity": "<strong>Acuity</strong> can be used if you are using a proper kitchen and are able to refer to a recipe during its creation."
+		},
+
+		"CQC": {
+			"Label": "CQC",
+			"Summary": "To use unarmed techniques, wrestling skills, and improvised weapons. The professional art of the use of swords, maces, and other long one-handed weapons.",
+			"Description": "STARLIGHT_JOURNALS.Skills.CQC.Description",
+			"AltStatistics.Coordination": "<strong>Coordination</strong> can be used in the place of <strong>Build</strong> when using melee weapons and wrestling."
+		},
+
+		"Deception": {
+			"Label": "Deception",
+			"Summary": "To provide falsehoods, create convincing tales, and keep your words and your facts separate. To help create false personalities as well.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Deception.Description",
+			"AltStatistics.Wits": "<strong>Wits</strong> can be used if you’re in a stressful situation and put on the spot to sell a lie. It can also be used if you want to blather through the lie with speed rather than be fully convincing."
+		},
+
+		"Determination": {
+			"Label": "Determination",
+			"Summary": "To resist fear, pain, and psychic powers targeting one’s mind. To push through mental damage, no matter what is telling you not to.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Determination.Description",
+			"AltStatistics.Potency": "<strong>Potency</strong> can be used when attacked by psychic powers."
+		},
+
+		"Endurance": {
+			"Label": "Endurance",
+			"Summary": "To resist poisons, cold, and the heat. To push through what the physical world might throw at you, including psychic powers targeting one’s body.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Endurance.Description",
+			"AltStatistics.Potency": "You can use <strong>Potency</strong> to resist physical psychic attacks."
+		},
+
+		"Energetics": {
+			"Label": "Energetics",
+			"Summary": "To control electrical systems, manage shield systems, and keep out parasitic programs from starships and armor systems alike. Used for resisting hacking and e/m effects.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Energetics.Description",
+			"AltStatistics.Acuity": "When not in a stressful situation, you can use <strong>Acuity</strong> instead of <strong>Wits</strong>."
+		},
+
+		"Finesse": {
+			"Label": "Finesse",
+			"Summary": "To use weapons requiring more dexterity and leverage, like smaller knives and larger, longer weapons like staves.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Finesse.Description",
+			"AltStatistics.Build": "<strong>Build</strong> can be used instead of <strong>Coordination</strong> at any time."
+		},
+
+		"FirstAid": {
+			"Label": "First Aid",
+			"Summary": "To use field aid, field medicines, and administer aid rapidly when required. Handle medical emergencies with the care and grace needed.",
+			"Description": "STARLIGHT_JOURNALS.Skills.FirstAid.Description",
+			"AltStatistics.Acuity": "In non-stressful situations, <strong>Acuity</strong> can be utilized instead."
+		},
+
+		"HeavyGuns": {
+			"Label": "Heavy Guns",
+			"Summary": "To use large ranged weapons like machine guns and rocket launchers, as well as their more scientifically advanced kin. Also covers clearing jams and maintaining them.",
+			"Description": "STARLIGHT_JOURNALS.Skills.HeavyGuns.Description",
+			"AltStatistics.Coordination": "<strong>Coordination</strong> can be used in the place of <strong>Build</strong> at any time."
+		},
+
+		"HeavyMelee": {
+			"Label": "Heavy Melee",
+			"Summary": "To use large melee weapons, primarily the heavier, around 3-5 kg, two handed weapons. Also covers any absurdly over sized weapons that are dubbed as Extreme.",
+			"Description": "STARLIGHT_JOURNALS.Skills.HeavyMelee.Description"
+		},
+
+		"Inquiry": {
+			"Label": "Inquiry",
+			"Summary": "To see through lies, track down the truth among a crowd’s statements, and to find people in social settings. It is also used to acquire items and ask pointed questions.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Inquiry.Description",
+			"AltStatistics.Wits": "<strong>Wits</strong> can be used instead of <strong>Empathy</strong>, but results in a much more forceful context that can be off-putting or counterproductive."
+		},
+
+		"Interlacing": {
+			"Label": "Interlacing",
+			"Summary": "To weave the different layers of reality together to produce fascinating effects. Used primarily with psychic powers, especially gates and those that buff yourself.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Interlacing.Description",
+			"AltStatistics.Acuity": "You can use <strong>Acuity</strong> instead of <strong>Potency</strong> when out of combat, even when using psychic powers."
+		},
+
+		"Intimidation": {
+			"Label": "Intimidation",
+			"Summary": "To coerce with threats, either physical or social such as blackmail. Can be used to cow the will of enemies and cajole less stalwart allies.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Intimidation.Description",
+			"AltStatistics.Build": "<strong>Wits</strong> can used instead of <strong>Potency</strong> freely.",
+			"AltStatistics.Wits": "<strong>Build</strong> can be used in situations where physical strength can be applied to intimidation."
+		},
+
+		"Knowledge": {
+			"Label": "Knowledge",
+			"Summary": "To know things in both a general and specific sense. These are things your character already knows or at least knows how to understand more.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Knowledge.Description"
+		},
+
+		"LongArms": {
+			"Label": "Long-arms",
+			"Summary": "To use various two handed rifle style weapons. This includes assault rifles, sniper rifles, marksman rifles, and shorter launchers. Can be used for Crossbow style weapons as well. Covers maintenance for these weapons.",
+			"Description": "STARLIGHT_JOURNALS.Skills.LongArms.Description",
+			"AltStatistics.Build": "You may use <strong>Build</strong> at any point if preferred."
+		},
+
+		"Magnetism": {
+			"Label": "Magnetism",
+			"Summary": "To charm, attract, and exert willing authority over people. Often an inspiring person has strong magnetism.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Magnetism.Description",
+			"AltStatistics.Wits": "When exerting authority, you can use <strong>Wits</strong> instead of <strong>Empathy</strong>."
+		},
+
+		"MechFab": {
+			"Label": "Mechanical Fabrication",
+			"Summary": "To fabricate and modify items based on standard engineering principles and deconstruct the vast majority of technology. Used when applying structural engineering principles",
+			"Description": "STARLIGHT_JOURNALS.Skills.MechFab.Description",
+			"AltStatistics.Wits": "When performing medicine under stress, you can use <strong>Wits</strong> instead at a -20."
+		},
+
+		"Medicine": {
+			"Label": "Medicine",
+			"Summary": "To perform long term care, perform surgeries, and use advanced medical devices. Covers the dosing of medicines. Can be upgraded with talents to allow crafting medicines and drugs",
+			"Description": "STARLIGHT_JOURNALS.Skills.Medicine.Description",
+			"AltStatistics.Wits": "<strong>Wits</strong> can be used when performing salvage or repairs at a workbench."
+		},
+
+		"Navigation": {
+			"Label": "Navigation",
+			"Summary": "To plot a route, find oneself in space, orient in an unknown locale, and utilize navigational equipment such as maps and nav-computers.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Navigation.Description",
+			"AltStatistics.Coordination": "When using dead reckoning or an innate sense of direction, <strong>Coordination</strong> can be used instead."
+		},
+
+		"Perception": {
+			"Label": "Perception",
+			"Summary": "To find hidden people and things, to spot the unseen, or search for difficult to find items. It is also used when perceiving things with all of your senses, including tasting for poison or sensing oddities in gravity via kinesthetic senses.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Perception.Description",
+			"AltStatistics.Coordination": "<strong>Coordination</strong> can be freely used in the place of <strong>Wits</strong> for perception."
+		},
+
+		"Performance": {
+			"Label": "Performance",
+			"Summary": "To use instruments, dance, and sing. To understand the methods to create performances and understand what other people’s creations.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Performance.Description",
+			"AltStatistics.Coordination": "If your performance style focuses more on physical prowess than sheer entertainment, <strong>Coordination</strong> can be used."
+		},
+
+		"Persuasion": {
+			"Label": "Persuasion",
+			"Summary": "To convince people using their personality, reasonable reasons, and appeal without falsehood. To have a pleasant personality and know how to make conversation.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Persuasion.Description",
+			"AltStatistics.Acuity": "<strong>Acuity</strong> can be used when <strong>build</strong>ing disposition with shop-talk rather than small talk."
+		},
+
+		"Piloting": {
+			"Label": "Piloting",
+			"Summary": "To pilot, to drive, to operate. If a vehicle or mount requires direct operation, it is covered under this skill in its use.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Piloting.Description",
+			"AltStatistics.Wits": "<strong>Wits</strong> can be used when piloting anything other than Superheavy Suits, Assault Suits, and Vehicles with the <i>Quick</i> special."
+		},
+
+		"Programming": {
+			"Label": "Programming",
+			"Summary": "To perform cryptography, to create and use programs, and to perform hacks. Also covers a wide array of other comp-sci and infosec information",
+			"Description": "STARLIGHT_JOURNALS.Skills.Programming.Description",
+			"AltStatistics.Wits": "<strong>Wits</strong> can be used when performing combat hacking."
+		},
+
+		"PsiTechFab": {
+			"Label": "Psi-tech Fabrication",
+			"Summary": "To construct, understand, and salvage psi-tech devices. To command and control psi-tech drones and shards while giving them some independence.",
+			"Description": "STARLIGHT_JOURNALS.Skills.PsiTechFab.Description",
+			"AltStatistics.Acuity": "You can use <strong>Acuity</strong> instead of <strong>Potency</strong> at any point."
+		},
+
+		"Repair": {
+			"Label": "Repair",
+			"Summary": "To quickly repair or salvage devices of any type. This includes all forms of fabrication rather than being specific to each. Including bio-tech.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Repair.Description",
+			"AltStatistics.Acuity": "<strong>Acuity</strong> can be used when not under a time crunch."
+		},
+
+		"Research": {
+			"Label": "Research",
+			"Summary": "To sort through the data, perform exhaustive searches, and prepare data in a presentable form. Data science understanding is primarily under this skill.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Research.Description",
+			"AltStatistics.Empathy": "If your data source is a person, <strong>Empathy</strong> can be used instead."
+		},
+
+		"Scanning": {
+			"Label": "Scanning",
+			"Summary": "To use scanning devices, to understand scanned data, and understand complicated, unfiltered scientific data. Includes personal and starship scanners both.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Scanning.Description",
+			"AltStatistics.Wits": "<strong>Wits</strong> can be used in stressful situation at a -20 mod."
+		},
+
+		"Security": {
+			"Label": "Security",
+			"Summary": "To understand and break through mechanical locks, either silently or loudly. Can also be used to deploy lateral thinking to go around locks rather than deal with them.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Security.Description",
+			"AltStatistics.Coordination": "<strong>Coordination</strong> can be used if the test is made quietly and requires skillful fingers."
+		},
+
+		"Sidearms": {
+			"Label": "Sidearms",
+			"Summary": "To use pistols and PDWs, as well as maintain those weapons.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Sidearms.Description"
+		},
+
+		"Stealth": {
+			"Label": "Stealth",
+			"Summary": "To move silently, remain out of sight, and shadow targets. To understand others enough to know how to avoid them and slip away from notice.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Stealth.Description",
+			"AltStatistics.Wits": "<strong>Wits</strong> can be used to hide in crowds and wellpopulated urban areas."
+		},
+
+		"Survival": {
+			"Label": "Survival",
+			"Summary": "To track through the wilderness, to forage and hunt, to setup good camps, and perform primitive camps.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Survival.Description",
+			"AltStatistics.Coordination": "<strong>Coordination</strong> can be used instead at any time."
+		},
+
+		"Telekinesis": {
+			"Label": "Telekinesis",
+			"Summary": "To manipulate generated energy and matter for use. To move matter at will. This is used primarily for psychic powers.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Telekinesis.Description",
+			"AltStatistics.Build": "If the telekinesis is touch range, <strong>Build</strong> can be used instead of <strong>Potency</strong>."
+		},
+
+		"Telepathy": {
+			"Label": "Telepathy",
+			"Summary": "To reach through n-space to achieve a direct connection between animas for communication. Can be used for good or ill. Primarily used for psychic powers.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Telepathy.Description",
+			"AltStatistics.Wits": "When using telepathy, can use <strong>Wits</strong> at a -20. If you have the <i>Force of Will</i> talent, the -20 is removed."
+		},
+
+		"Trades": {
+			"Label": "Trades",
+			"Summary": "Unlisted skills that would still be reasonable to know like smithing, farming, law, or the like. Every pip in a Trade gives +20 to the test.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Trades.Description"
+		},
+
+		"Trickery": {
+			"Label": "Trickery",
+			"Summary": "To pickpocket, perform feats of illusion, and perform feats like juggling. To perform feats of physical misdirection.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Trickery.Description",
+			"AltStatistics.Wits": "If relying on misdirection rather than quick hands, you can use <strong>Wits</strong> instead."
+		},
+
+		"Xenology": {
+			"Label": "Xenology",
+			"Summary": "To perform studies on flora and fauna, come to understand unknown biology. Can be used for foraging after you have an understanding of the local ecology.",
+			"Description": "STARLIGHT_JOURNALS.Skills.Xenology.Description"
+		}
+	},
+
+	"STARLIGHT_JOURNALS.Creature": {
+		"Species": "Species",
+		"Personality": "Personality"
+	},
+
+	"STARLIGHT_JOURNALS.Character": {
+		"Archetype.Label": "Archetype",
+		"Archetype.Description": "STARLIGHT_JOURNALS.Character.Archetype.Description",
+		"Archetype.Toggle": "Show Archetype field?",
+
+		"Background.Label": "Public background",
+		"Background.Description": "STARLIGHT_JOURNALS.Creature.Background.Description",
+
+		"PrivateBackground.Label": "Private background",
+		"PrivateBackground.Description": "STARLIGHT_JOURNALS.Creature.PrivateBackground.Description",
+
+		"SexOrGender": "Sex / Gender",
+		"Height": "Height",
+		"Frame": "Frame",
+		"Coloration": "Coloration",
+
+		"Nationality": "Nationality",
+		"Origin": "Origin",
+		"Training": "Training",
+
+		"Careers": {
+			"Label": "Careers",
+			"First": "First career",
+			"Second": "Second career",
+			"Third": "Third career"
+		}
+	},
+
+	"STARLIGHT_JOURNALS.Base": "Base",
+	"STARLIGHT_JOURNALS.Biography": "Biography",
+	"STARLIGHT_JOURNALS.Description": "Description",
+	"STARLIGHT_JOURNALS.Notes": "Notes",
+	"STARLIGHT_JOURNALS.PlayerCharacter": "Player Character"
 }

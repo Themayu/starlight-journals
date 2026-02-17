@@ -3,15 +3,21 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"license": "(MIT OR APACHE-2.0)",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"test": "vitest --typecheck"
 	},
 	"devDependencies": {
 		"fvtt-types": "github:League-of-Foundry-Developers/foundry-vtt-types#d7751f280498c9d749c5bd821628ab2be9acefbc",
+		"lit-html": "^3.3.2",
+		"ts-essentials": "^10.1.1",
 		"typescript": "~5.9.3",
-		"vite": "npm:rolldown-vite@7.2.5"
+		"vite": "npm:rolldown-vite@7.2.5",
+		"vite-tsconfig-paths": "~6.1.0",
+		"vitest": "^4.0.18"
 	},
 	"overrides": {
 		"vite": "npm:rolldown-vite@7.2.5"

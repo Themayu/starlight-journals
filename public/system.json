@@ -21,6 +21,20 @@
 		{ "lang": "en", "name": "English", "path": "lang/en.json" }
 	],
 
+	"documentTypes": {
+		"Actor": {
+			"playerCharacter": {
+				"htmlFields": [
+					"details.description",
+					"details.notes",
+					"details.background.publicDetails",
+					"details.background.privateDetails",
+					"details.personality.details"
+				]
+			}
+		}
+	},
+
 	"flags": {
 		"hotReload": {
 			"extensions": ["hbs", "json"],
