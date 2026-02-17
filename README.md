@@ -13,7 +13,7 @@ developers, and must be compiled from source.
 
 This softeare is not an official *Starlight Journals* or
 *Foundry Virtual Tabletop* product; it is a third party work, and is affiliated
-with neither Ian P. Quinton or Foundry Gaming LLC.
+with neither Ian P. Quinlan or Foundry Gaming LLC.
 
 This software is licensed under your choice of Apache 2.0 or MIT. License terms
 for both modules can be found in `LICENSE-APACHE` and `LICENSE-MIT`
